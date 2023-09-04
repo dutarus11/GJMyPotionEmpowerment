@@ -7,12 +7,19 @@ namespace QuickStart
 {
     public class PlayerScript : NetworkBehaviour
     {
-        //public override void OnStartLocalPlayer()
-        //{
-        //    Camera.main.transform.SetParent(transform);
-        //    Camera.main.transform.localPosition = new Vector3(0, 0, 0);
-        //}
+        //public GameObject projecilePoolObj;
 
+        //ProjectilePooling projectilePooling;
+        //GameObject proPooling;
+        private void Awake()
+        {
+           // projectilePooling = GameObject.Find("ProjectilePrefab").GetComponent<ProjectilePooling>();
+        }
+
+        private void Start()
+        {
+          // proPooling.SetActive(false);
+        }
         void Update()
         {
             if (!isLocalPlayer) { return; }
@@ -29,9 +36,10 @@ namespace QuickStart
         {
             if (Input.GetButton("Fire1"))
             {
+                //proPooling.SetActive(true);
+                //ProjectilePooling.isActiveObj = true;
                 //shoot attack power 
-                PlayerAttackPower.Instance.Shoot();
-
+                PlayerAttackPower.Instance.Shoot();               
             }
         }
     }

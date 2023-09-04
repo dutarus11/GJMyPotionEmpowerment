@@ -170,6 +170,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  projecilePoolObj: {fileID: 8520688816277381477, guid: bf0c115ff5ff16348b5cd2bb4ad85c41, type: 3}
 --- !u!54 &4457460610704390379
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -199,7 +200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firingPoint: {fileID: 512597667159873333}
-  projectilePrefab: {fileID: 100004, guid: 9873681c71de0a44cb04bbd930b50059, type: 3}
   firingSpeed: 0
 --- !u!1 &7999066905710581779
 GameObject:
@@ -225,7 +225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7999066905710581779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 1.74, z: 0}
+  m_LocalPosition: {x: 0.86, y: -0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

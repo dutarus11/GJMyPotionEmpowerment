@@ -8,9 +8,7 @@ public class PlayerAttackPower : MonoBehaviour
     [SerializeField]
     Transform firingPoint;
     
-    [SerializeField]
-    GameObject projectilePrefab;
-    
+       
     [SerializeField]
     float firingSpeed;
 
@@ -31,9 +29,10 @@ public class PlayerAttackPower : MonoBehaviour
     public void Shoot()
     {
         if (lastShootingInstance + firingSpeed <= Time.time)
-        {
+        {           
+            Projectile _projectile = ProjectilePooling.Instance.Instantiate(firingPoint.position, firingPoint.rotation);
+            _projectile.Movement();
             lastShootingInstance = Time.time;
-            Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);
         }
         
     }
