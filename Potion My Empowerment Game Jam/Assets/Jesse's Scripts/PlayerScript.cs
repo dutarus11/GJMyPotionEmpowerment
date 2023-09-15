@@ -26,17 +26,17 @@ namespace QuickStart
           
         }
 
-        private void FixedUpdate()
-        {
-            if (Input.GetKey(KeyCode.W)) 
-            {
-                playerRigid.velocity = transform.forward * w_speed * Time.deltaTime;
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                playerRigid.velocity = -transform.forward * w_speed * Time.deltaTime;
-            }
-        }
+        //private void FixedUpdate()
+        //{
+        //    if (Input.GetKey(KeyCode.W)) 
+        //    {
+        //        playerRigid.velocity = transform.forward * w_speed * Time.deltaTime;
+        //    }
+        //    if (Input.GetKey(KeyCode.S))
+        //    {
+        //        playerRigid.velocity = -transform.forward * w_speed * Time.deltaTime;
+        //    }
+        //}
         void Update()
         {
             //if (!isLocalPlayer) { return; }
@@ -87,20 +87,20 @@ namespace QuickStart
                 }
             }
 
-            InputShootingManager();
+            //InputShootingManager();
         }
 
-        void InputShootingManager()
-        {
-            if (Input.GetButton("Fire1"))
-            {
-                //proPooling.SetActive(true);
-                //ProjectilePooling.isActiveObj = true;
-                //shoot attack power 
+        //void InputShootingManager()
+        //{
+        //    if (Input.GetButton("Fire1"))
+        //    {
+        //        //proPooling.SetActive(true);
+        //        //ProjectilePooling.isActiveObj = true;
+        //        //shoot attack power 
                 
-                PlayerAttackPower.Instance.Shoot();               
+        //        PlayerAttackPower.Instance.Shoot();               
                               
-            }
-        }
+        //    }
+        //}
     }
 }
