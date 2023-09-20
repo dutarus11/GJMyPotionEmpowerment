@@ -159,7 +159,6 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
-            InputShootingManager();
         }
 
         private void LateUpdate()
@@ -387,16 +386,6 @@ namespace StarterAssets
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
-            }
-        }
-
-        void InputShootingManager()
-        {
-            if (Input.GetButton("Fire1"))
-            {
-
-                PlayerAttackPower.Instance.Shoot();
-
             }
         }
     }
