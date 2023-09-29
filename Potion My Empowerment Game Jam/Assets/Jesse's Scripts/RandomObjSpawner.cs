@@ -7,6 +7,7 @@ public class RandomObjSpawner : MonoBehaviour
 {
 
     public GameObject newPotion;
+    EnemySpawner spawned;
     void Update()
     {
 
@@ -14,7 +15,12 @@ public class RandomObjSpawner : MonoBehaviour
         {
             Vector3 randomSpwnPos = new Vector3(Random.Range(-5, 2), 0, Random.Range(-5, 2));
             Instantiate(newPotion, randomSpwnPos, Quaternion.identity);
+           // spawned.EnemySpawning();
         }
+        //if (newPotion = null)
+        //{
+        //    spawned.EnemySpawning();
+        //}
        
     }
 
