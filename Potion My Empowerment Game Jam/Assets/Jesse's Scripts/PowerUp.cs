@@ -18,6 +18,7 @@ public class PowerUp : MonoBehaviour
         {
             Debug.Log("Colldier WORKS!");
             Destroy(gameObject);
+            ScoreSystem.scoreCount += 50;
         }
 
     }

@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ResetStage : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private ScoreSystem scoreSystem;
     void Start()
     {
         
@@ -14,7 +15,7 @@ public class ResetStage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       scoreSystem = FindObjectOfType<ScoreSystem>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +24,7 @@ public class ResetStage : MonoBehaviour
         {
             Debug.Log("Colldier WORKS!");
             SceneManager.LoadScene(1);
+            ScoreSystem.scoreCount = 0;
         }
 
     }
