@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ResetStage : MonoBehaviour
 {
+    //Resets the game 
 
     private ScoreSystem scoreSystem;
     void Start()

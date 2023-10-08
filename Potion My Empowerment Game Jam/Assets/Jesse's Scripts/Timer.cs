@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 30;
+    public float timeRemaining;
+    public float timeOut = 0;
     void Update()
+    {        
+        Timing();
+    }
+
+    //The Timer 
+    public void Timing()
     {
         timeRemaining -= Time.deltaTime;
-
-        if (timeRemaining <= 0)
+        if (timeRemaining <= timeOut)
         {
-            
             Debug.Log("Time is up!");
             Application.Quit();
         }

@@ -6,12 +6,8 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    //public GameObject activateObj;
-    //public float seconds = 3f;
-    private void Start()
-    {
-        
-    }
+ 
+    //Power-up collider
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -22,17 +18,6 @@ public class PowerUp : MonoBehaviour
         }
 
     }
-    //void Update()
-    //{
-    //    activateObj.SetActive(true);
-    //    PlayerAttackPower.Instance.Shoot();
-    //    IEnumerator Waiting()
-    //    {
-    //        yield return new WaitForSeconds(seconds);
-
-    //        activateObj.SetActive(false);
-
-    //    }
-    //}     
+  
    
 }

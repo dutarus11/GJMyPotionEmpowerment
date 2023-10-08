@@ -5,6 +5,7 @@ using UnityEngine;
 public class ParticleCollDetector : MonoBehaviour
 {
 
+    //Detects particles collider 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Cube")

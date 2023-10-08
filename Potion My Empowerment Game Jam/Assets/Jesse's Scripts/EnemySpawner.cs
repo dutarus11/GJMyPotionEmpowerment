@@ -19,6 +19,7 @@ public class EnemySpawner : MonoBehaviour
        EnemySpawning();
     }
 
+    //Enemy spawning 
     public void EnemySpawning()
     {
         if (potion.newPotion == null)

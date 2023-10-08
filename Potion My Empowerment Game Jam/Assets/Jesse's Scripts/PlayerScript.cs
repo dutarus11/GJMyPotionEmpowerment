@@ -12,42 +12,16 @@ namespace QuickStart
         public float w_speed, wb_speed, olw_speed, rn_speed, ro_speed;
         public bool running;
         public Transform playerTransform;
-        //public GameObject projecilePoolObj;
-
-        //ProjectilePooling projectilePooling;
-        //GameObject proPooling;
-        private void Awake()
-        {
-           // projectilePooling = GameObject.Find("ProjectilePrefab").GetComponent<ProjectilePooling>();
-        }
-
-        private void Start()
-        {
-          
-        }
-
-        //private void FixedUpdate()
-        //{
-        //    if (Input.GetKey(KeyCode.W)) 
-        //    {
-        //        playerRigid.velocity = transform.forward * w_speed * Time.deltaTime;
-        //    }
-        //    if (Input.GetKey(KeyCode.S))
-        //    {
-        //        playerRigid.velocity = -transform.forward * w_speed * Time.deltaTime;
-        //    }
-        //}
+               
         void Update()
+        {           
+           PlayerInputs();           
+        }
+
+        //player inputs 
+        void PlayerInputs()
         {
-            //if (!isLocalPlayer) { return; }
-
-            //float moveX = Input.GetAxis("Horizontal") * Time.deltaTime * 110.0f;
-            //float moveZ = Input.GetAxis("Vertical") * Time.deltaTime * 4f;
-
-            //transform.Rotate(0, moveX, 0);
-            //transform.Translate(0, 0, moveZ);
-
-            if (Input.GetKeyDown(KeyCode.W)) 
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 playerAnim.SetTrigger("Run");
                 playerAnim.ResetTrigger("Idle");
@@ -86,21 +60,7 @@ namespace QuickStart
                     w_speed = w_speed + rn_speed;
                 }
             }
-
-            //InputShootingManager();
         }
-
-        //void InputShootingManager()
-        //{
-        //    if (Input.GetButton("Fire1"))
-        //    {
-        //        //proPooling.SetActive(true);
-        //        //ProjectilePooling.isActiveObj = true;
-        //        //shoot attack power 
-                
-        //        PlayerAttackPower.Instance.Shoot();               
-                              
-        //    }
-        //}
+       
     }
 }

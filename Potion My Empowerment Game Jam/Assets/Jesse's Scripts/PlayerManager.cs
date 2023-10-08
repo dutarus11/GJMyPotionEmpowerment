@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    //Singleton approach for the player manager 
     #region Singleton
 
     public static PlayerManager instance;

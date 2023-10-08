@@ -27,15 +27,16 @@ public class Projectile : MonoBehaviour
         if (moves)
         {
             MovingTheProjectile();
-        }
-        
+        }       
     }
 
+
     public void Movement()
-    {
-        
+    {       
         moves = true;
     }
+
+    //Projectile's movement 
     void MovingTheProjectile()
     {
         if (Vector3.Distance(firingPoint, transform.position) > maxProjectileDistance)
@@ -46,7 +47,6 @@ public class Projectile : MonoBehaviour
         else
         {
             transform.Translate(Vector3.forward * projectileSpeed * Time.deltaTime);
-        }
-        
+        }        
     }
 }

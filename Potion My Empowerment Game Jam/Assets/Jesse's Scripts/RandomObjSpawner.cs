@@ -10,18 +10,17 @@ public class RandomObjSpawner : MonoBehaviour
     EnemySpawner spawned;
     void Update()
     {
+        PotionSpawns();                
+    }
 
+    //Spawns the potion 
+    void PotionSpawns()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Vector3 randomSpwnPos = new Vector3(Random.Range(-5, 2), 0, Random.Range(-5, 2));
             Instantiate(newPotion, randomSpwnPos, Quaternion.identity);
-           // spawned.EnemySpawning();
         }
-        //if (newPotion = null)
-        //{
-        //    spawned.EnemySpawning();
-        //}
-       
     }
 
    

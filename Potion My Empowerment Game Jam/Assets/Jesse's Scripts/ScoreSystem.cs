@@ -8,9 +8,24 @@ public class ScoreSystem : MonoBehaviour
 {
     public Text scoreText;
     public Text topScoreText;
+    public Text winningText;
+    public Text gameOverText;
+
     public static int scoreCount;
     public static int topScoreCount;
+   
     void Start()
+    {
+        PlayerPreferences();      
+    }
+   
+    void Update()
+    {
+        KeepingScore();      
+    }
+
+    //Player preferences maintaining Scoring UI data 
+    void PlayerPreferences()
     {
         if (PlayerPrefs.HasKey("Top Score"))
         {
@@ -18,10 +33,9 @@ public class ScoreSystem : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    //Tracks the score
+    void KeepingScore()
     {
-      
         if (scoreCount > topScoreCount)
         {
             topScoreCount = scoreCount;
@@ -29,7 +43,11 @@ public class ScoreSystem : MonoBehaviour
         }
         scoreText.text = "Score: " + scoreCount;
         topScoreText.text = "Top Score: " + topScoreCount;
-        //scoreText.text = "Score: " + Mathf.Round(scoreCount);
-        //scoreText.text = "Top Score: " + Mathf.Round(topScoreCount);
+
+        // winning conditon
+        if (scoreCount == 500)
+        {
+            Debug.Log("YOU WIN THE GAME!!");
+        }
     }
 }

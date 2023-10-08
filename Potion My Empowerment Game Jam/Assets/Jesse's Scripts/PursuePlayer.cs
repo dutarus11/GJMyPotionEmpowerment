@@ -12,7 +12,7 @@ public class PursuePlayer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    //Enemy pursues the player 
     void Update()
     {
         enemy.SetDestination(player.position);

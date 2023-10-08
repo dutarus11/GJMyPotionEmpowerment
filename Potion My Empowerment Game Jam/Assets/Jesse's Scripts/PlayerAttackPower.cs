@@ -21,11 +21,7 @@ public class PlayerAttackPower : MonoBehaviour
     }
 
     
-    void Update()
-    {
-        
-    }
-
+   //player shooter method 
     public void Shoot()
     {
         if (lastShootingInstance + firingSpeed <= Time.time)
