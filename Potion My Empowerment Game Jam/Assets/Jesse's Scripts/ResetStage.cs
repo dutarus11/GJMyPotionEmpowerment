@@ -8,12 +8,11 @@ public class ResetStage : MonoBehaviour
     //Resets the game 
 
     private ScoreSystem scoreSystem;
+    public int num = 0;
     void Start()
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
        scoreSystem = FindObjectOfType<ScoreSystem>();
@@ -25,7 +24,7 @@ public class ResetStage : MonoBehaviour
         {
             Debug.Log("Colldier WORKS!");
             SceneManager.LoadScene(1);
-            ScoreSystem.scoreCount = 0;
+            ScoreSystem.scoreCount = num;
         }
 
     }

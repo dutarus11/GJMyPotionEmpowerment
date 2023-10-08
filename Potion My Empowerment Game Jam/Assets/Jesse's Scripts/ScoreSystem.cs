@@ -13,6 +13,7 @@ public class ScoreSystem : MonoBehaviour
 
     public static int scoreCount;
     public static int topScoreCount;
+    public int winningScoreCount = 500;
    
     void Start()
     {
@@ -45,7 +46,7 @@ public class ScoreSystem : MonoBehaviour
         topScoreText.text = "Top Score: " + topScoreCount;
 
         // winning conditon
-        if (scoreCount == 500)
+        if (scoreCount == winningScoreCount)
         {
             Debug.Log("YOU WIN THE GAME!!");
         }

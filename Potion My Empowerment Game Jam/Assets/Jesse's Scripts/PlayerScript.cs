@@ -10,6 +10,7 @@ namespace QuickStart
         public Animator playerAnim;
         public Rigidbody playerRigid;
         public float w_speed, wb_speed, olw_speed, rn_speed, ro_speed;
+        public float num = 0;
         public bool running;
         public Transform playerTransform;
                
@@ -47,11 +48,11 @@ namespace QuickStart
             }
             if (Input.GetKeyDown(KeyCode.A))
             {
-                playerTransform.Rotate(0, -ro_speed * Time.deltaTime, 0);
+                playerTransform.Rotate(0, -ro_speed * Time.deltaTime, num);
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
-                playerTransform.Rotate(0, ro_speed * Time.deltaTime, 0);
+                playerTransform.Rotate(0, ro_speed * Time.deltaTime, num);
             }
             if (running == true)
             {
