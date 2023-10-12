@@ -6,8 +6,8 @@ public class Projectile : MonoBehaviour
 {
     private Vector3 firingPoint;
 
-    [SerializeField]
-    private GameObject shootingObj;
+    
+    public GameObject shootingObj;
 
     [SerializeField]
     private float projectileSpeed;

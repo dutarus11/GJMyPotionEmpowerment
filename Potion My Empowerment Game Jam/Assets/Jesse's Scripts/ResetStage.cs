@@ -23,9 +23,14 @@ public class ResetStage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Colldier WORKS!");
-            SceneManager.LoadScene(1);
+            ResetScene(); 
             ScoreSystem.scoreCount = num;
         }
 
+    }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }

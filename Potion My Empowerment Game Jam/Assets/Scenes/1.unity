@@ -13919,6 +13919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   findRadius: 10
+  y: 0
+  num: 10
 --- !u!4 &548103202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7113839546963084498, guid: 6a08e377fb6250c439f15919964d9e31,
@@ -25196,6 +25198,7 @@ MonoBehaviour:
   topScoreText: {fileID: 1347345174}
   winningText: {fileID: 1090774293}
   gameOverText: {fileID: 2106005472}
+  winningScoreCount: 500
 --- !u!1001 &970323482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29108,6 +29111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPotion: {fileID: 1000013317980782, guid: 2cf6690298568294cb6b655c0a3aeb87, type: 3}
+  x: -5
+  y: 2
+  num: 0
 --- !u!65 &1114542868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39566,6 +39572,9 @@ MonoBehaviour:
   enemy: {fileID: 3245041212504742648, guid: 4b23e48b00b3a144f89c9e6c4148a0b7, type: 3}
   enemyPos: {fileID: 3245041212504742147, guid: 4b23e48b00b3a144f89c9e6c4148a0b7,
     type: 3}
+  x: 1.21
+  y: 0.74
+  z: 1.25
 --- !u!4 &1462577094
 Transform:
   m_ObjectHideFlags: 0
@@ -53909,6 +53918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f173d2b0d2b9147a8a696a58c36ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num: 0
 --- !u!4 &2066889403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8299288389115244592, guid: 4fcf83e3711edad4f994baea78e386b0,

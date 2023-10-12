@@ -13,6 +13,8 @@ public class ProjectilePooling : MonoBehaviour
 
     public static ProjectilePooling Instance;
 
+    Projectile _projectile;
+
     private void Awake()
     {
         Instance = GetComponent<ProjectilePooling>();
@@ -26,11 +28,13 @@ public class ProjectilePooling : MonoBehaviour
     //Projectile Instantiation 
     public Projectile Instantiate(Vector3 pos, Quaternion rot)
     {
+
         Projectile _projectile = projectilesInPool[0];
+
         _projectile.transform.position = pos;
         _projectile.transform.rotation = rot;
         projectilesInPool.Remove(_projectile);
-        
+
         return _projectile;
     }
 
@@ -44,14 +48,14 @@ public class ProjectilePooling : MonoBehaviour
     //object pool initialization 
     void PoolInitialization()
     {
-        projectilesInPool= new List<Projectile>();
-       
+        projectilesInPool= new List<Projectile>();      
+
         for (int i = 0; i < poolLength; i++)
-        {           
+        {
             GameObject _projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
             projectilesInPool.Add(_projectile.GetComponent<Projectile>());
         }
-        
+
     }
 
    

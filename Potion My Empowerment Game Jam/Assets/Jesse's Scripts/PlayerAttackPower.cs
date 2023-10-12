@@ -20,16 +20,15 @@ public class PlayerAttackPower : MonoBehaviour
         Instance = GetComponent<PlayerAttackPower>();
     }
 
-    
-   //player shooter method 
     public void Shoot()
     {
         if (lastShootingInstance + firingSpeed <= Time.time)
-        {           
+        {
             Projectile _projectile = ProjectilePooling.Instance.Instantiate(firingPoint.position, firingPoint.rotation);
             _projectile.Movement();
             lastShootingInstance = Time.time;
         }
-        
+
     }
+  
 }
