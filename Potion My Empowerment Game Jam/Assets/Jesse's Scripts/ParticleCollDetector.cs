@@ -1,29 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class ParticleCollDetector : MonoBehaviour
 {
 
     //Detects particles collider 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.name == "ForestBrazzierBlue")
+    //    {
+    //        Debug.Log("Particle collision SUCCESS!");
+    //        //Destroy(other.gameObject);
+    //    }
+    //}
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.name == "Cube")
+        if (collision.gameObject.name == "ForestBrazzierBlue")
         {
             Debug.Log("Particle collision SUCCESS!");
         }
     }
-    //void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.name == "Cube")
-    //    {
-    //        Debug.Log("Particle collision SUCCESS!");
-    //    }
-        
-
-    //}
-    //private void OnParticleCollision(GameObject other)
+    //void OnParticleCollision(GameObject other)
     //{
     //    Debug.Log("Particle collision SUCCESS!");
     //}
 }
+
+    
+

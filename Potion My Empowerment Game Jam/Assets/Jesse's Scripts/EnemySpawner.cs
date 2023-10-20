@@ -25,16 +25,16 @@ public class EnemySpawner : MonoBehaviour
     //Enemy spawning 
     public void EnemySpawning()
     {
-        if (potion.newPotion == null)
-        {
-            Instantiate(enemy, new Vector3(x, y, z), Quaternion.identity);
-            Debug.Log("Spawn Message Succeeded!");
-        }
-        //if (Input.GetKeyDown(KeyCode.Space))
+        //if (potion.newPotion == null)
         //{
-        //    Instantiate(enemy, new Vector3(1.21f, 0.74f, 1.25f), Quaternion.identity);
+        //    Instantiate(enemy, new Vector3(x, y, z), Quaternion.identity);
         //    Debug.Log("Spawn Message Succeeded!");
         //}
-            
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(enemy, new Vector3(1.21f, 0.74f, 1.25f), Quaternion.identity);
+            Debug.Log("Spawn Message Succeeded!");
+        }
+
     }
 }
