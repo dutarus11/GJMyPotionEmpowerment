@@ -9733,7 +9733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingObj: {fileID: 100004}
-  projectileSpeed: 2
+  projectileSpeed: 8
   maxProjectileDistance: 20
 --- !u!114 &618699044223501357
 MonoBehaviour:

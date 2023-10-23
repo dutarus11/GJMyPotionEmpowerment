@@ -5,27 +5,20 @@ using UnityEngine;
 
 public class ParticleCollDetector : MonoBehaviour
 {
-
-    //Detects particles collider 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.name == "ForestBrazzierBlue")
-    //    {
-    //        Debug.Log("Particle collision SUCCESS!");
-    //        //Destroy(other.gameObject);
-    //    }
-    //}
+       
+    //Detects particles collider & destroys the enemies 
+   
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "ForestBrazzierBlue")
+        var obj = collision.gameObject;
+        Debug.Log("In collision enter");
+        
+        if (obj.tag == "Enemy")
         {
-            Debug.Log("Particle collision SUCCESS!");
-        }
-    }
-    //void OnParticleCollision(GameObject other)
-    //{
-    //    Debug.Log("Particle collision SUCCESS!");
-    //}
+            Debug.Log("IN DESTROY CHECK");
+            Destroy(obj);
+        }       
+    }   
 }
 
     
