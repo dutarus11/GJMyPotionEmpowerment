@@ -14,6 +14,7 @@ public class ScoreSystem : MonoBehaviour
     public static int scoreCount;
     public static int topScoreCount;
     public int winningScoreCount = 500;
+    public int num;
    
     void Start()
     {
@@ -50,5 +51,17 @@ public class ScoreSystem : MonoBehaviour
         {
             Debug.Log("YOU WIN THE GAME!!");
         }
+    }
+
+    public void AddingPoints(int number)
+    {
+        num = number;
+        ScoreSystem.scoreCount += number;
+    }
+
+    public void SubtractPoints(int number)
+    {
+        num = number;
+        ScoreSystem.scoreCount -= number;
     }
 }

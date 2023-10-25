@@ -25022,7 +25022,7 @@ GameObject:
   - component: {fileID: 968992466}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UI Objects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25130,6 +25130,7 @@ MonoBehaviour:
   winningText: {fileID: 1090774293}
   gameOverText: {fileID: 2106005472}
   winningScoreCount: 500
+  num: 0
 --- !u!1001 &970323482
 PrefabInstance:
   m_ObjectHideFlags: 0
