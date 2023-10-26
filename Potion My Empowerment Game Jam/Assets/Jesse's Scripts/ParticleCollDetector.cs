@@ -14,18 +14,32 @@ public class ParticleCollDetector : MonoBehaviour
         increasePoints = GameObject.FindGameObjectWithTag("UI Objects").GetComponent<ScoreSystem>();
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        var obj = collision.gameObject;
+
+        var obj = other.gameObject;
         Debug.Log("In collision enter");
-        
+
         if (obj.tag == "Enemy")
         {
             Debug.Log("IN DESTROY CHECK");
             Destroy(obj);
-            increasePoints.AddingPoints(25);
-        }       
-    }   
+            increasePoints.AddingPoints(15);
+        }
+
+        //    void OnCollisionEnter(Collision collision)
+        //{
+        //    var obj = collision.gameObject;
+        //    Debug.Log("In collision enter");
+
+        //    if (obj.tag == "Enemy")
+        //    {
+        //        Debug.Log("IN DESTROY CHECK");
+        //        Destroy(obj);
+        //        increasePoints.AddingPoints(25);
+        //    }       
+        //}   
+    }
 }
 
     

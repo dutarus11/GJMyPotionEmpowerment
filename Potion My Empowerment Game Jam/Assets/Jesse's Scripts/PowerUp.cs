@@ -9,7 +9,7 @@ public class PowerUp : MonoBehaviour
 
     //Power-up collider
 
-    public int num = 50;
+    public int num = 25;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
