@@ -13849,9 +13849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2bd8da2a79a9de4dbcc63f95c88850a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findRadius: 10
-  y: 0
-  num: 10
+  checkRate: 0.01
 --- !u!4 &548103202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7113839546963084498, guid: 6a08e377fb6250c439f15919964d9e31,
