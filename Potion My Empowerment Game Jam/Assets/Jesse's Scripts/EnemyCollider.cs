@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemyCollider : MonoBehaviour
 {
+    // The Enemy Collider Class 
     ScoreSystem decreasePoints;
+    public int num = 5;
     private void Start()
     {
         decreasePoints = GameObject.FindGameObjectWithTag("UI Objects").GetComponent<ScoreSystem>();
@@ -19,19 +21,9 @@ public class EnemyCollider : MonoBehaviour
             if (obj.tag == "Enemy")
             {
                 Debug.Log("PLAYER COLLIDER WORKS!!!!");
-                decreasePoints.SubtractPoints(5);
+                decreasePoints.SubtractPoints(num);
             }
         
     }
-    //void OnCollisionEnter(Collision collision)
-    //{
-    //    var obj = collision.gameObject;
-    //    //Debug.Log("In collision enter");
-
-    //    if (obj.tag == "Enemy")
-    //    {
-    //        Debug.Log("PLAYER COLLIDER WORKS!!!!");
-    //        decreasePoints.SubtractPoints(10);
-    //    }
-    //}
+  
 }

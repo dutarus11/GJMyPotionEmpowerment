@@ -7,6 +7,7 @@ namespace QuickStart
 {    
     public class PlayerScript : NetworkBehaviour
     {
+        //The Player Controller Class 
         public Animator playerAnim;
         public Rigidbody playerRigid;
         public float w_speed, wb_speed, olw_speed, rn_speed, ro_speed;

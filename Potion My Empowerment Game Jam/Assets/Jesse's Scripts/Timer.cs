@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+    //Count down till reset 
     public float timeRemaining;
     public float timeOut = 0;
     void Update()

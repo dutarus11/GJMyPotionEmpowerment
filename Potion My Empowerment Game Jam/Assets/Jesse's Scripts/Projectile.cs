@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    //The Projectile Class - manages the projectile 
+    
     private Vector3 firingPoint;
 
     

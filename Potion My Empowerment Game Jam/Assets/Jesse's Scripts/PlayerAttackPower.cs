@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerAttackPower : MonoBehaviour
 {
+    //The Player Attack Power Class 
+
     [SerializeField]
     Transform firingPoint;
     
@@ -20,6 +22,7 @@ public class PlayerAttackPower : MonoBehaviour
         Instance = GetComponent<PlayerAttackPower>();
     }
 
+    //The Shooting Method 
     public void Shoot()
     {
         if (lastShootingInstance + firingSpeed <= Time.time)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProjectilePooling : MonoBehaviour
 {
+    //The Projectile Pooling Class - manages the memory optimization using by using object pooling 
     [SerializeField]
     float poolLength;
          

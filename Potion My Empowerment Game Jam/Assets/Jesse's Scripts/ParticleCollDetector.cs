@@ -27,18 +27,7 @@ public class ParticleCollDetector : MonoBehaviour
             increasePoints.AddingPoints(15);
         }
 
-        //    void OnCollisionEnter(Collision collision)
-        //{
-        //    var obj = collision.gameObject;
-        //    Debug.Log("In collision enter");
-
-        //    if (obj.tag == "Enemy")
-        //    {
-        //        Debug.Log("IN DESTROY CHECK");
-        //        Destroy(obj);
-        //        increasePoints.AddingPoints(25);
-        //    }       
-        //}   
+       
     }
 }
 

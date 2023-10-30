@@ -6,6 +6,7 @@ using UnityEngine;
 public class RandomObjSpawner : MonoBehaviour
 {
 
+    //Random Object Spawner Class 
     public GameObject newPotion;
     EnemySpawner spawned;
 
@@ -20,7 +21,7 @@ public class RandomObjSpawner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3 randomSpwnPos = new Vector3(Random.Range(-5, 2), num, Random.Range(-5, 2));
+            Vector3 randomSpwnPos = new Vector3(Random.Range(x, y), num, Random.Range(x, y));
             Instantiate(newPotion, randomSpwnPos, Quaternion.identity);
         }
     }
