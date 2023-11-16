@@ -1,11 +1,11 @@
-using Mirror;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace QuickStart
 {    
-    public class PlayerScript : NetworkBehaviour
+    public class PlayerScript : MonoBehaviour
     {
         //The Player Controller Class 
         public Animator playerAnim;
