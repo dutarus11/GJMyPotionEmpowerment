@@ -32,7 +32,7 @@ public class ResetStage : MonoBehaviour
     public void ResetScene()
     {
         Debug.Log("SCENE LOADED SUCCESS!");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void ShutDown()
