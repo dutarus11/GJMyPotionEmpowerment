@@ -35,19 +35,7 @@ public class FusionConnection : MonoBehaviour, INetworkRunnerCallbacks
         Debug.Log("Player " + player.PlayerId + " has left");
     }
    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+   
     #region unused Fusion callbacks
     public void OnConnectRequest(NetworkRunner runner, NetworkRunnerCallbackArgs.ConnectRequest request, byte[] token)
     {

@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemy;
     public Transform enemyPos;
 
-    public float x = 1.21f, y = 0.74f, z = 1.25f;
+    public float x = 1.21f, y = -1.08f, z = 1.25f;
 
     RandomObjSpawner potion;
    

@@ -9,11 +9,7 @@ public class ResetStage : MonoBehaviour
 
     private ScoreSystem scoreSystem;
     public int num = 0;
-    void Start()
-    {
-        
-    }
-    void Update()
+      void Update()
     {
        scoreSystem = FindObjectOfType<ScoreSystem>();
     }
@@ -33,6 +29,12 @@ public class ResetStage : MonoBehaviour
     {
         Debug.Log("SCENE LOADED SUCCESS!");
         SceneManager.LoadScene(0);
+    }
+
+    public void ResetScene2()
+    {
+        Debug.Log("TITLE SCENE LOADED SUCCESS!");
+        SceneManager.LoadScene(1);
     }
 
     public void ShutDown()
